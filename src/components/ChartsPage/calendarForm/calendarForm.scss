@@ -1,0 +1,145 @@
+.calendar {
+	position: relative;
+	z-index: 2;
+
+	&__row {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__text {
+		font-size: 14px;
+		line-height: 17px;
+		color: #444444;
+		margin-right: 8px;
+	}
+
+	&__data {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid #f1f1f1;
+		box-sizing: border-box;
+		border-radius: 5px;
+		padding: 3px;
+	}
+
+	&__icon {
+		background: #3a80ba;
+		border-radius: 3px;
+		padding: 4px;
+		margin-right: 10px;
+	}
+
+	&__selected-dates {
+		font-size: 12px;
+		line-height: 15px;
+		color: #444444;
+	}
+
+	&__calendars {
+		position: absolute;
+		top: 140%;
+		right: 0px;
+		width: 468px;
+		display: flex;
+		flex-wrap: wrap;
+		background: #ffffff;
+		border: 1px solid #f1f1f1;
+		box-sizing: border-box;
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+		border-radius: 5px;
+		padding: 16px;
+	}
+
+	&__block {
+		flex: 0 1 48%;
+
+		&:first-child {
+			margin-right: 4%;
+		}
+
+		&:last-child {
+			flex: 1 0 100%;
+			margin-top: 16px;
+		}
+	}
+
+	@media (max-width: 767.98px) {
+		flex: 1 0 100%;
+		display: flex;
+		justify-content: flex-end;
+
+		&__row {
+			display: flex;
+			justify-content: flex-end;
+			flex-wrap: wrap;
+		}
+
+		&__text {
+			margin: 0px 0px 5px;
+			flex: 1 0 100%;
+			text-align: end;
+		}
+
+		&__calendars {
+			width: 300px;
+			top: 120%;
+		}
+
+		&__block {
+			flex: 1 0 100%;
+
+			&:first-child {
+				margin: 0px 0px 16px;
+			}
+		}
+	}
+}
+
+.block {
+	&__row {
+		display: flex;
+		align-items: center;
+	}
+
+	&__btn-apply {
+		background: #3a80ba;
+		border-radius: 5px;
+		padding: 7px 42px;
+		color: #fff;
+		transition: 0.3s;
+
+		&:hover {
+			opacity: 0.9;
+			transition: 0.3s;
+			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+		}
+	}
+
+	&__text {
+		font-size: 14px;
+		line-height: 17px;
+		text-align: center;
+		color: #444444;
+		margin: 0px 15px 0px 12px;
+	}
+
+	&__btn-cancel {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 17px;
+		text-align: center;
+		text-decoration-line: underline;
+		color: #08203c;
+		background-color: #fff;
+		transition: 0.3s;
+
+		&:hover {
+			opacity: 0.9;
+			transition: 0.3s;
+			text-decoration: none;
+		}
+	}
+}

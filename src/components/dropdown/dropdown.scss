@@ -1,0 +1,42 @@
+.dropdown {
+	position: relative;
+
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		cursor: pointer;
+	}
+
+	&__content {
+		background-color: #fff;
+		position: absolute;
+		width: 100%;
+		top: 110%;
+	}
+
+	&__item {
+		cursor: pointer;
+	}
+	&__arrow {
+		display: block;
+		position: relative;
+
+		&-down,
+		&-top {
+			position: absolute;
+			display: inline-block;
+		}
+
+		&-down {
+			transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+		}
+
+		&-top {
+			transform: rotate(-135deg);
+			-webkit-transform: rotate(-135deg);
+		}
+	}
+}

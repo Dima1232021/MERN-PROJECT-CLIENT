@@ -1,0 +1,38 @@
+.navbar {
+	margin: 16px 0px 16px;
+
+	&__list {
+		display: flex;
+	}
+
+	&__link {
+		text-align: center;
+		color: #cccccc;
+		font-size: 16px;
+		line-height: 20px;
+		&:hover {
+			color: #3a80ba;
+		}
+
+		&.activ {
+			color: #3a80ba;
+		}
+	}
+
+	&__arrow {
+		border: solid #cccccc;
+		border-width: 0 2px 2px 0;
+		margin: 0px 4px 0px 2px;
+		display: inline-block;
+		padding: 3px;
+		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+	}
+
+	@media (max-width: 767.98px) {
+		&__link {
+			font-size: 14px;
+			line-height: 16px;
+		}
+	}
+}

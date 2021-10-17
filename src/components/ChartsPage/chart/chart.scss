@@ -1,0 +1,10 @@
+.chart {
+	font-size: 16px;
+	line-height: 142%;
+	text-align: center;
+
+	@media (max-width: 767.98px) {
+		font-size: 14px;
+		line-height: 14px;
+	}
+}

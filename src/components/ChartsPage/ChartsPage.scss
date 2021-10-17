@@ -1,0 +1,54 @@
+.charts {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+	&__name {
+		font-weight: bold;
+		font-size: 32px;
+		line-height: 39px;
+	}
+
+	&__row {
+		&:first-child {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 24px;
+		}
+
+		&:last-child {
+			margin: 32px 0px 48px;
+		}
+	}
+
+	&__title {
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 24px;
+	}
+	& .footer {
+		margin-top: auto;
+	}
+
+	@media (max-width: 767.98px) {
+		&__row {
+			&:first-child {
+				display: flex;
+				flex-wrap: wrap;
+				margin-bottom: 5px;
+			}
+		}
+		&__name {
+			font-size: 24px;
+			line-height: 28px;
+		}
+
+		&__title {
+			font-size: 22px;
+			line-height: 24px;
+			margin-bottom: 16px;
+		}
+	}
+}

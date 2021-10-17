@@ -1,0 +1,107 @@
+.block {
+	&__row {
+		display: flex;
+		align-items: center;
+	}
+
+	&__dropdown {
+		flex: 0 0 48%;
+		font-size: 12px;
+		line-height: 15px;
+
+		&:first-child {
+			margin-right: 2%;
+		}
+	}
+
+	&__btn {
+		border: 1px solid #d5d5d5;
+		border-radius: 4px;
+		padding: 3px;
+	}
+
+	&__arrow {
+		margin-left: 5px;
+		width: 20px;
+		height: 20px;
+		background: #3a80ba;
+		border-radius: 3px;
+
+		&-down,
+		&-top {
+			left: 5px;
+			border: solid #fff;
+			border-width: 0 2px 2px 0;
+			padding: 4px;
+		}
+
+		&-down {
+			top: 2px;
+		}
+
+		&-top {
+			top: 7px;
+		}
+	}
+
+	&__content {
+		border: 1px solid #d5d5d5;
+		border-radius: 4px;
+		padding: 3px;
+		overflow-y: auto;
+		height: 100px;
+	}
+
+	&__item {
+		margin: 3px 0px;
+		padding: 3px 5px;
+		border-radius: 6px;
+
+		&:hover {
+			background-color: rgb(235, 235, 235);
+		}
+
+		&.activ {
+			background-color: rgb(235, 235, 235);
+		}
+	}
+
+	&__days {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__name-days,
+	&__days-row {
+		display: grid;
+		grid-template-columns: repeat(7, 1fr);
+		border-radius: 5px;
+		text-align: center;
+		font-size: 10px;
+		line-height: 12px;
+		padding: 3px 0px;
+	}
+
+	&__name-days {
+		color: #ffffff;
+		background: #3a80ba;
+		margin: 4px 0px;
+	}
+
+	&__days-row {
+		border: 1px solid #f1f1f1;
+		margin-bottom: 2px;
+	}
+
+	&__day {
+		color: #e0dfdf;
+		&.current-month {
+			color: #444444;
+		}
+		&.activ {
+			color: #ffffff;
+			border-radius: 5px;
+			background-color: #3a80ba;
+		}
+	}
+}
