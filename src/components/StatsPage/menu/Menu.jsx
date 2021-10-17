@@ -8,13 +8,13 @@ function Menu(props) {
 	const dispatch = useDispatch()
 	const showingUsers = useSelector(state => state.users.showingUsers)
 	const items = [
-		{ name: '50 Користувачів', value: 50 },
-		{ name: '40 Користувачів', value: 40 },
-		{ name: '30 Користувачів', value: 30 },
-		{ name: '20 Користувачів', value: 20 }
+		{ name: '50 users', value: 50 },
+		{ name: '40 users', value: 40 },
+		{ name: '30 users', value: 30 },
+		{ name: '20 users', value: 20 }
 	]
 
-	
+
 
 	function setValue(value) {
 		dispatch(showingUsersAction(value))
@@ -28,7 +28,7 @@ function Menu(props) {
 			<div className="container">
 				<div className="menu__row">
 					<div className="menu__showing-users">
-						<h3 className='menu__title'>В таблиці:</h3>
+						<h3 className='menu__title'>The table shows:</h3>
 						<Dropdown
 							items={items}
 							defaultValue={showingUsers}
